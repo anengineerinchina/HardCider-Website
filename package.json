@@ -1,0 +1,14 @@
+{
+  "name": "WoodchuckHardCider",
+  "version": "0.0.1",
+  "description": "WoodchuckHardCider",
+  "main": "app.js",
+  "author": {
+    "name": "Matthew",
+    "email": ""
+  },
+  "dependencies": {
+    "express": "4.4.5",
+    "ejs": "*"
+  }
+}

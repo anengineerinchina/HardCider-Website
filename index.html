@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<!-- 
+	/*2014 - The HardCider Developers*/
+	/*Donate: 1PuhR83yykTsjhgqraY86X4YKSeUgCk7J*/
+-->
+<html>
+	<head>
+		<title>HardCider</title>
+		<meta name="viewport" content="width-device-width, initial-scale=1.0">
+		<link type="text/css" href="public/stylesheets/bootstrap.min.css" rel="stylesheet">
+		<link type="text/css" href="public/stylesheets/styles.css" rel="stylesheet">
+		<script src="public/javascripts/jQuery.min.js"></script>
+		<script src ="public/javascripts/bootstrap.js"></script>
+		<script>
+		$(document).ready(function(){
+			var active = $('#home_link');
+			$('.navbar-fixed-bottom').hide();
+			<!-- Set Active Link in Navbar -->
+			$("li").click(function(event){
+				$(this).addClass('active');
+				active.removeClass('active');
+				active = $(this);
+			});
+			
+			<!-- Scroll to clicked section -->
+			$( '.section_link' ).on('click', function(event) {
+				event.preventDefault();
+				var target = "#" + this.id + "_section";
+				$('html, body').animate({
+					scrollTop: $(target).offset().top
+				}, 850);
+			});
+		
+			<!-- Show footer upon scroll -->
+			$( window ).scroll(function(){
+				if($(window).width() >= parseInt(400)) {
+					$('.navbar-fixed-bottom').show();
+				}
+				else {
+					$('.navbar-fixed-bottom').hide();
+				}
+			});
+		
+		});
+	
+	</script>
+
+
+	</head>
+
+	<body>
+		<!-- Navigation Bar -->
+		<div class="navbar navbar-inverse navbar-static-top">
+			<div class="container">
+	
+				<span class="navbar-brand">HardCider</span>
+					
+				<button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+
+				<div class="collapse navbar-collapse navHeaderCollapse">
+					<ul class="nav navbar-right navbar-nav ">
+						<li class=" section_link active" id="home"><a href="home">Home</a></li>
+						<li class="section_link" id="downloads"><a href="downloads">Downloads</a></li>
+						<li class="section_link" id="links"><a href="#">Links</a></li>
+						<li class="section_link" id="about"><a href="#">About</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		
+		<!-- Main Image and Logo -->
+		<div class="container" id="home_section">
+			<div class="jumbotron header-jumbotron">
+				<center>
+					<h1>HardCider</h1>
+					<div />
+					<img src="http://i.imgur.com/xh7n2e8.jpg?1" width="30%" height="30%"></img>
+					<div />
+					<h3>The Cryptocurrency with one Hell of a Bite!</h3>
+				</center>
+			</div>
+		</div>
+			
+		<!-- Download Section -->
+		<div class="container download-container" id="downloads_section">
+			<div class="row">
+					<div class="container jumbotron-download-container">
+						
+							<div class="jumbotron custom-jumbotron jumbotron-download-container">
+								<center>
+									<span><h1>Downloads<h1></span>
+									<span><h4>Password: V3rM0nTrULez   Node: 107.170.59.196</h4></span>
+								</center>
+							</div>
+							<div class="col-md-3">
+							<div class="col-md-3 col-md-offset-7">
+								<h1>
+									<span class="label label-primary">Windows</span>
+								</h1>
+								<div>
+									<center>
+										<a href="https://mega.co.nz/#!cslHgJQY!5byTslGYQIPVo32tRdb9QlXbzgcwyQm9CRPmPTJjQOk"><img src="public/res/images/windows_start.png" class="win-image"></img></a>
+									</center>
+								</div>
+							</div>
+							</div>
+							<div class="col-md-3">
+							<div class="col-md-3 col-md-offset-10">
+								<h1>
+									<span class="label label-primary">Mac OS</span>
+								</h1>
+							</div>
+							</div>
+							<div class="col-md-3">
+							<div class="col-md-3 col-md-offset-10">
+								<h1>
+									<span class="label label-primary">Linux / Source</span>
+								</h1>
+								<div>
+									<center>
+										<a href="#"><img src="public/res/images/github.png" class="github-image"></img></a>
+									</center>
+								</div>
+							</div>
+							</div>
+						
+					</div>
+					
+			</div>
+			
+		</div>
+		
+		<!-- Links Section -->
+		<div class="container links-container" id="links_section">
+			<div class="row">
+					<div class="container jumbotron-links-container">
+						<div class="jumbotron custom-jumbotron jumbotron-links-container">
+							<center>
+								<span><h1>Links<h1></span>
+							</center>
+						</div>
+						<div class="row">
+							<div class="col-md-3">
+								<div class="col-md-3 col-md-offset-8">
+									<h1>
+										<span class="label label-success">Pools</span>
+									</h1>
+									<div>
+											<ul>
+												<li><a class="pool" href="http://whc.123dh.cn/">whc.123dh.cn</a></li>
+																															                                                                                 			<li><a class="pool" href="http://www.hashharder.com/x13/woodchuckhardcider">hashharder</a></li>
+<li><a class="pool "href="http://whc.pool.mn/">whc.pool.mn</a></li>
+											</ul>
+									</div>
+								</div>
+								</div>
+							
+								<div class="col-md-3">
+									<div class="col-md-3 col-md-offset-9">
+									<h1>
+										<span class="label label-success">Exchanges</span>
+									</h1>
+									
+											<ul>
+												<li>ComingSoon!</li>
+											</ul>
+									
+									</div>
+								</div>
+							
+								<div class="col-md-3">
+									<div class="col-md-3 col-md-offset-12">
+										<h1>
+											<span class="label label-success">Games</span>
+										</h1>
+										<div>
+											<ul>
+												<li>ComingSoon!</li>
+											</ul>		
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+				</div>
+			</div>
+		
+		<!-- About Section -->
+		<div class="container about-container" id="about_section">
+			<div class="row">
+				<div class="container jumbotron-about-container">
+					<div class="jumbotron custom-jumbotron jumbotron-about-container">
+						<center>
+							<span><h1>About<h1></span>
+				
+							<span><h3>HardCider is a new Proof of Stake Cryptocurrency for fans of this refreshing beverage<h3></span>
+						</center>
+					</div>
+					<center>
+						<div class="panel-body custom-panel">
+							<p class="navbar-text">
+							HardCider [WHC] is a currency made to bring attention to our favorite alcoholic drink: Hard Apple Cider. Hard Cider is still vastly under appreciated in our eyes,
+							and what better way to bring attention to it than by naming a great new currency in its honor!
+							</p>
+							<span class=""><h3>Specifications:</h3></span>
+						</div>
+						<div class="container">
+
+									<div class="list">Proof of Work / Proof of Stake Hybrid</div>
+									<div class="list">PoW Algorithm: X13</div>
+									<div class="list">Total Coins: 80,000,000 WHC </div>
+									<div class="list">Total PoW Coins: 1,600,000</div>
+									<div class="list">PoW Blocks: 16,000</div>
+									<div class="list">Coins per PoW Block: 100</div>
+									<div class="list">Confirmations to Mature: 210</div>
+									
+																		
+						</div>
+					</center>					
+				</div>
+			</div>
+		</div>
+		
+		<div class="navbar navbar-default navbar-fixed-bottom">
+			<div class="container">
+				<p>
+					<span class="footer footer-left navbar-text">2014 HardCider</span>
+					<span class="footer footer-right navbar-text">1PuhR83yykTsjhgqraY86X4YKSeUgCk7J</span>
+					<span class="footer footer-right navbar-text">FJBVzqiH4S2QcF4BNsba3wUjCZDDNRwKRV</span>
+				</p>
+			</div>
+		</div>
+		
+
+	</body>
+
+
+</html>

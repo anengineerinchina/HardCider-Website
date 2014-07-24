@@ -1,0 +1,141 @@
+@media all {
+.custom_navbar {
+  background-color: #112;
+  border-color: #080808;
+}
+
+.pool {
+	color: black;
+}
+
+.container {
+	min-width: 305px;
+}
+
+#home_section {
+	margin-bottom: 17px;
+}
+
+.header-jumbotron {
+	background-color: white;
+
+}
+
+.custom-jumbotron {
+	margin-bottom: 0px !important;
+}
+
+.download-container {
+	width: 100%;
+	height:150%;
+	min-height:600px;
+	padding-bottom:60px;
+}
+
+.download-container .jumbotron-download-container{
+
+  background-color: #d35400;
+  width:100%;
+}
+
+.links-container {
+	width: 100%;
+	height: 150%;
+	min-height: 200px;
+	padding-bottom:60px;
+}
+
+.links-container .jumbotron-links-container {
+	background-color: #2980b9;
+	width: 100%;
+
+}
+
+.jumbotron-links-container {
+padding-bottom: 130px;
+}
+
+.about-container {
+	width: 100%;
+	height: 150%;
+	min-height: 200px;
+	padding-bottom:100px;
+}
+
+
+.about-container .jumbotron-about-container {
+
+	background-color: #bdc3c7;
+	width: 100%;
+
+}
+.jumbotron-about-container {
+padding-bottom: 20px;
+}
+
+.custom-panel {
+	width:75%;
+	vertical-align: center;
+}
+
+.footer {
+	
+}
+
+.footer-left {
+	text-align:left;
+	float:left;
+	clear:left;
+}
+
+.footer-right {
+	text-align:right;
+	float:right;
+	clear:right;
+}
+
+}
+@media (max-width: 400px) {
+.navbar-fixed-bottom {
+	display:none;
+}
+
+
+}
+
+@media (min-width: 901px) {
+.win-image {
+	width: 170px;
+	height: 172px;
+}
+.github-image {
+	width: 220px;
+	height: 220px;
+	margin-bottom: 10px;
+}
+}
+
+@media (max-width: 1001px) {
+.win-image {
+	width: 85px;
+	height: 86px;
+}
+.github-image {
+	width: 110px;
+	height: 110px;
+	margin-bottom: 10px;
+}
+}
+
+@media (max-width: 600px) {
+.win-image {
+	width: 50px;
+	height: 51px;
+}
+.github-image {
+	width: 75px;
+	height: 75px;
+	margin-bottom: 10px;
+}
+
+}
